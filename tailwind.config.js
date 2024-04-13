@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./public/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Vazir: "Vazir",
+        VazirLight: "Vazir Light",
+        VazirMedium: "Vazir Medium",
+        VazirBold: "Vazir Bold",
+      }
+    },
   },
   plugins: [],
 }
