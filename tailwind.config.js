@@ -8,6 +8,11 @@ module.exports = {
         VazirLight: "Vazir Light",
         VazirMedium: "Vazir Medium",
         VazirBold: "Vazir Bold",
+      },
+      colors: {
+        bgWhite: "#0e132d",
+        colorSecondary: "#cbcdd8",
+        colorText: "#9498ac",
       }
     },
   },
