@@ -446,6 +446,42 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "Vazir";
+
+  src: local("Vazir"),
+            src("../public/font/Vazir.Woff2") format("Woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazir Light";
+
+  src: local("Vazir"),
+            src("../public/font/Vazir-Light.Woff2") format("Woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazir Medium";
+
+  src: local("Vazir"),
+            src("../public/font/Vazir-Medium.Woff2") format("Woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazir Bold";
+
+  src: local("Vazir"),
+            src("../public/font/Vazir-Bold.Woff2") format("Woff2");
+
+  font-display: swap;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -552,4 +588,135 @@ video {
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+}
+
+.bar {
+  width: 34px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #cbcdd8;
+}
+
+.customizeStyle {
+  font-style: normal;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-2\.5 {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-\[7px\] {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.size-7 {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-bgWhite {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 19 45 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-blue-300 {
+  --tw-gradient-from: #93c5fd var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(147 197 253 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-purple-400 {
+  --tw-gradient-to: #c084fc var(--tw-gradient-to-position);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.text-colorSecondary {
+  --tw-text-opacity: 1;
+  color: rgb(203 205 216 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.hover\:hue-rotate-\[20deg\]:hover {
+  --tw-hue-rotate: hue-rotate(20deg);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }

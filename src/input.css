@@ -29,3 +29,15 @@
             font-display: swap;
     }
 }
+
+@layer components {
+    .bar {
+        width: 34px;
+        height: 5px;
+        border-radius: 4px;
+        background-color: #cbcdd8;
+    }
+    .customizeStyle {
+        font-style: normal;
+    }
+}
