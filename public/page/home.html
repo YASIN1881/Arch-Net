@@ -1,52 +1,145 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arch Net - Home</title>
-    <link rel="stylesheet" href="../styles/output.css">
-</head>
-<body class="bg-bgWhite">
+    <link rel="stylesheet" href="../styles/output.css" />
+  </head>
+  <body class="bg-bgWhite">
     <!-- svg -->
     <svg class="hidden">
-        <symbol id="notifaction" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-          </symbol>
-          
+      <symbol
+        id="notifaction"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+        />
+      </symbol>
+
+      <symbol id="date"viewBox="0 0 15.00 15.00" fill="currentColor" stroke="currentColor" stroke-width="0.00015000000000000001"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#ff702c" fill-rule="evenodd" d="M107,154.006845 C107,153.45078 107.449949,153 108.006845,153 L119.993155,153 C120.54922,153 121,153.449949 121,154.006845 L121,165.993155 C121,166.54922 120.550051,167 119.993155,167 L108.006845,167 C107.45078,167 107,166.550051 107,165.993155 L107,154.006845 Z M108,157 L120,157 L120,166 L108,166 L108,157 Z M116.5,163.5 L116.5,159.5 L115.757485,159.5 L114.5,160.765367 L114.98503,161.275112 L115.649701,160.597451 L115.649701,163.5 L116.5,163.5 Z M112.5,163.5 C113.412548,163.5 114,163.029753 114,162.362119 C114,161.781567 113.498099,161.473875 113.110266,161.433237 C113.532319,161.357765 113.942966,161.038462 113.942966,160.550798 C113.942966,159.906386 113.395437,159.5 112.505703,159.5 C111.838403,159.5 111.359316,159.761248 111.051331,160.115385 L111.456274,160.632075 C111.724335,160.370827 112.055133,160.231495 112.425856,160.231495 C112.819392,160.231495 113.13308,160.382438 113.13308,160.690131 C113.13308,160.974601 112.847909,161.102322 112.425856,161.102322 C112.28327,161.102322 112.020913,161.102322 111.952471,161.096517 L111.952471,161.839623 C112.009506,161.833817 112.26616,161.828012 112.425856,161.828012 C112.956274,161.828012 113.190114,161.967344 113.190114,162.275036 C113.190114,162.565312 112.93346,162.768505 112.471483,162.768505 C112.10076,162.768505 111.684411,162.605951 111.427757,162.327286 L111,162.87881 C111.279468,163.227141 111.804183,163.5 112.5,163.5 Z M110,152.5 C110,152.223858 110.214035,152 110.504684,152 L111.495316,152 C111.774045,152 112,152.231934 112,152.5 L112,153 L110,153 L110,152.5 Z M116,152.5 C116,152.223858 116.214035,152 116.504684,152 L117.495316,152 C117.774045,152 118,152.231934 118,152.5 L118,153 L116,153 L116,152.5 Z" transform="translate(-107 -152)"></path> </g></symbol>
+
+      <symbol id="volume-used" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 33.778 21.241" viewBox="0 0 33.778 21.241"><path fill="#556fff" fill-rule="evenodd" d="M0 13h5.261v8.241H0zM7.203 3.221h5.261v18.02H7.203zM14.288 6.441h5.261V21.24h-5.261zM21.374 16.22h5.261v5.021h-5.261zM28.518 0h5.261v21.241h-5.261z" clip-rule="evenodd" class="color231f20 svgShape"></path></symbol>
+
+      <symbol id="graph" viewBox="0 0 500 500" id="graph"><path fill="#ff59a2" d="M411 419.1c-3.5 3.3-7 6.5-10.6 9.5h-.8L231.8 260.9V17.1c6-.5 12-.7 18.2-.7V250l161 169.1z" opacity=".32"></path><path fill="none" stroke="#ff59a2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" d="M411 419.1c-3.5 3.3-7 6.5-10.6 9.5-42 35.4-95.2 54.9-150.4 54.9C121 483.6 16.4 379 16.4 250c0-122.9 94.9-223.6 215.4-232.9v0c6-.5 12-.7 18.2-.7V250l161 169.1z"></path><path fill="#ff59a2" d="m435.2 392.3-4.9-5.1-38.5-39.9-44.3-45.8-38.5-39.8-26.9-27.8V18.6c9.1 1.3 18 3.1 26.9 5.4 13.2 3.4 26.1 8 38.5 13.7 15.6 7.2 30.5 16.1 44.3 26.6.2.1.4.3.6.4 14.3 11 26.9 23.2 37.9 36.6 67.8 82.1 72.6 203 4.9 291z"></path><path fill="#fff" d="M430.3 101.3v285.9l-38.5-39.9v-283c.2.1.4.3.6.4 14.3 11 26.9 23.3 37.9 36.6zm-82.8-63.6v263.9L309 261.7V24c13.2 3.4 26.1 8 38.5 13.7z" opacity=".32"></path></symbol>
     </svg>
     <!-- Start Header -->
     <header class="m-5">
-        <div class="flex flex-row-reverse items-center justify-between">
-            <!-- menu -->
-            <div>
-                <div class="bar"></div>
-                <div class="bar my-1"></div>
-                <div class="bar"></div>
-            </div>
-            <!-- logo -->
-            <a class="flex flex-row-reverse cursor-pointer">
-                <img src="../image/Logo.png" alt="Logo" class="size-7">
-                <i class="font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-400 ease-linear transition hover:hue-rotate-[20deg] duration-300 customizeStyle">rchNet</i>
-            </a>
-            <!-- notification -->
-            <div>
-                <svg class="size-6 text-colorSecondary">
-                    <use href="#notifaction"></use>
-                </svg>
-            </div>
+      <div class="flex flex-row-reverse items-center justify-between">
+        <!-- menu -->
+        <div>
+          <div class="bar"></div>
+          <div class="bar my-1"></div>
+          <div class="bar"></div>
         </div>
+        <!-- logo -->
+        <a class="flex flex-row-reverse cursor-pointer">
+          <img src="../image/Logo.png" alt="Logo" class="size-7" />
+          <i
+            class="font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-400 ease-linear transition hover:hue-rotate-[20deg] duration-300 customizeStyle"
+            >rchNet</i
+          >
+        </a>
+        <!-- notification -->
+        <div>
+          <svg class="size-6 text-colorSecondary">
+            <use href="#notifaction"></use>
+          </svg>
+        </div>
+      </div>
     </header>
     <!-- Finish Header -->
 
     <!-- Start Main -->
     <main>
-        <!-- Start  Welcom -->
-        <section class="mx-5 text-colorSecondary font-VazirBold text-lg md:text-xl xl:text-2xl">
-            <h1> سلام‚ محمد یاسین👋</h1>
-            <p class="text-base md:text-lg xl:text-xl">23333435</p>
-        </section>
-        <!-- Finish  Welcom -->
+      <!-- Start  Welcom -->
+      <section class="mx-5 text-colorSecondary font-VazirBold text-lg md:text-xl xl:text-2xl">
+        <h1>سلام‚ محمد یاسین👋</h1>
+        <p class="text-base md:text-lg xl:text-xl">23333435</p>
+      </section>
+      <!-- Finish  Welcom -->
+
+      <!-- Start User Information -->
+      <section class="m-5">
+        <div class="font-VazirMedium text-colorSecondary">
+          <!-- title -->
+          <p class="text-base md:text-lg mb-5">اطلاعات اشتراک</p>
+          <!-- Boxes -->
+          <div class="*:mb-6">
+            <!-- Date -->
+            <div class="font-VazirLight text-[15px] flex justify-between">
+               <!-- Rigth -->
+               <div class="flex gap-4 items-end">
+                <!-- Icon -->
+                <svg class="size-[20px] md:size-[25px]">
+                  <use href="#date"></use>
+                </svg>
+                <!-- Title -->
+                <span>تاریخ انقضا</span>
+               </div>
+               <!-- left -->
+               <div class="flex flex-col alin">
+                <!-- Title of Date -->
+                <p class="text-center">۱۲ روز / ۳۰ روز</p>
+                <!-- Progress -->
+                <div class="w-[100px] h-1 bg-backgroundColor rounded-[800px] mt-2">
+                  <div class="w-[20%] h-full bg-[#ff702c] rounded-full"></div>
+                </div>
+               </div>
+            </div>
+            <!-- Volume used -->
+            <div class="font-VazirLight text-[15px] flex justify-between">
+              <!-- Rigth -->
+              <div class="flex gap-4 items-end">
+               <!-- Icon -->
+               <svg class="size-[20px] md:size-[25px]">
+                 <use href="#volume-used"></use>
+               </svg>
+               <!-- Title -->
+               <span>حجم مصرف شده</span>
+              </div>
+              <!-- left -->
+              <div class="flex flex-col alin">
+               <!-- Title of Date -->
+               <p class="text-center">۱۲ گیگ / ۳۰ گیگ</p>
+               <!-- Progress -->
+               <div class="w-[100px] h-1 bg-backgroundColor rounded-[800px] mt-2">
+                 <div class="w-[20%] h-full bg-[#556fff] rounded-full"></div>
+               </div>
+              </div>
+            </div>
+            <!-- Remaining volume -->
+            <div class="font-VazirLight text-[15px] flex justify-between">
+              <!-- Rigth -->
+              <div class="flex gap-4 items-end">
+               <!-- Icon -->
+               <svg class="size-[20px] md:size-[25px]">
+                 <use href="#graph"></use>
+               </svg>
+               <!-- Title -->
+               <span>حجم باقی مانده</span>
+              </div>
+              <!-- left -->
+              <div class="flex flex-col alin">
+               <!-- Title of Date -->
+               <p class="text-center">۱۲ گیگ / ۳۰ گیگ</p>
+               <!-- Progress -->
+               <div class="w-[100px] h-1 bg-backgroundColor rounded-[800px] mt-2">
+                 <div class="w-[80%] h-full bg-[#ff59a2] rounded-full"></div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Finish User Information -->
     </main>
     <!-- Finish Main -->
-</body>
+  </body>
 </html>

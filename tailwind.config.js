@@ -13,6 +13,7 @@ module.exports = {
         bgWhite: "#0e132d",
         colorSecondary: "#cbcdd8",
         colorText: "#9498ac",
+        backgroundColor: "#e9ecef",
       }
     },
   },
