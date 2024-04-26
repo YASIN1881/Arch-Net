@@ -9,9 +9,14 @@
 </head>
 <body class="bg-bgWhite">
 
-    <sgv class="hidden">
+    <svg class="hidden">
 
-    </sgv>
+        <symbol id="user" viewBox="0 0 32 32"><path d="M21.223 19.963a1 1 0 0 1-.665-.817.965.965 0 0 1 .4-.937C22.61 17.026 24 13.554 24 12V9.293A8.213 8.213 0 0 0 16.246 1 8 8 0 0 0 8 9v3c0 1.554 1.39 5.026 3.038 6.209a.964.964 0 0 1 .4.937 1 1 0 0 1-.665.817C6.58 21.49 1 24.191 1 30a1 1 0 0 0 1 1h28a1 1 0 0 0 1-1c0-5.809-5.58-8.51-9.777-10.037ZM3.075 29c.465-3 3.1-5.237 8.385-7.157a3.013 3.013 0 0 0 1.962-2.424 2.98 2.98 0 0 0-1.222-2.834C11.106 15.8 10 12.944 10 12V9a6 6 0 0 1 6.186-6A6.2 6.2 0 0 1 22 9.293V12c0 .944-1.106 3.8-2.2 4.584a2.981 2.981 0 0 0-1.219 2.834 3.013 3.013 0 0 0 1.962 2.424C25.82 23.763 28.46 26 28.925 29H3.075Z"></path></symbol>
+
+        <symbol id="activity" viewBox="0 0 24 24"><g><path d="M14.33 20h-.21a2 2 0 0 1-1.76-1.58L9.68 6l-2.76 6.4A1 1 0 0 1 6 13H3a1 1 0 0 1 0-2h2.34l2.51-5.79a2 2 0 0 1 3.79.38L14.32 18l2.76-6.38A1 1 0 0 1 18 11h3a1 1 0 0 1 0 2h-2.34l-2.51 5.79A2 2 0 0 1 14.33 20z"></path></g></symbol>
+
+        <symbol id="invitation" viewBox="0 0 24 24"><path d="M15 18a1 1 0 0 1-1 1h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 1 1Zm7-14v14a1 1 0 0 1-1 1h-3.21a1 1 0 0 1 0-2H20V6l-7.39 5.75a1 1 0 0 1-1.22 0L4 6v11h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1Zm-3.91 1H5.91L12 9.73Z"></path></symbol>
+    </svg>
 
     <!-- Start header -->
     <header class="m-5">
@@ -27,6 +32,86 @@
         </div>
     </header>
     <!-- Finish header -->
+
+    <!-- Start Main -->
+    <main>
+        <!-- accordion of profile and seting -->
+        <section class="m-5">
+            <!-- My account -->
+            <div class="relative mb-3">
+                <h6 class="mb-0">
+                    <button class="relative flex items-baseline justify-between w-full p-[4px] font-VazirMedium transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-colorSecondary group" data-collapse-target="collapse-1">
+                        <p class="text-[22.4px]">اکانت من</p>
+                        <svg class="size-[25px] fill-slate-50 self-center">
+                            <use href="#user"></use>
+                        </svg>
+                    </button>
+                </h6>
+                <div data-collapse="collapse-1" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                  <div class="font-VazirLight text-colorSecondary *:p-1 *:m-1">  
+                    <!-- Username -->
+                    <p>نام کاربری: YASIN</p>
+                    <!-- Email -->
+                    <p>ایمیل: yasinnasiry18@gmail.com</p>
+                    <!-- Telegram id -->
+                    <p>آیدی تلگرام: 234323</p>
+                    <!-- Telegram username -->
+                    <p>نام کاربری تلگرام: Yasinmml</p>
+                    <!-- Group -->
+                    <p>گروه: VIP-net</p>
+                    <!-- Registration time -->
+                    <p>زمان ثبت نام: 2023-02-20</p>
+                  </div>
+                </div>
+            </div>
+            <!-- Active subscription -->
+            <div class="relative mb-3">
+              <h6 class="mb-0">
+                  <button class="relative flex items-baseline justify-between w-full p-[4px] font-VazirMedium transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-colorSecondary group" data-collapse-target="collapse-2">
+                      <p class="text-[22.4px]"> اشتراک فعال
+                      </p>
+                      <svg class="size-[25px] fill-slate-50 self-center">
+                          <use href="#activity"></use>
+                      </svg>
+                  </button>
+              </h6>
+              <div data-collapse="collapse-2" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="font-VazirLight text-colorSecondary *:p-1 *:m-1">  
+                  <!-- name of subscription -->
+                  <p>نام اشتراک : اشتراک ۲۰ گیگ دو کاربره</p>
+                  <!-- Subscription volume -->
+                  <p>حجم اشتراک: ۲۰ گیگ</p>
+                  <!-- Expiration date -->
+                  <p>تاریخ انقضای اشتراک: ۱۴۰۳/۰۲/۱۲</p>
+                </div>
+              </div>
+          </div>
+          <!-- Invitation link -->
+          <div class="relative mb-3">
+            <h6 class="mb-0">
+                <button class="relative flex items-baseline justify-between w-full p-[4px] font-VazirMedium transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-colorSecondary group" data-collapse-target="collapse-3">
+                    <p class="text-[22.4px]">لینک دعوت</p>
+                    <svg class="size-[25px] fill-slate-50 self-center">
+                        <use href="#invitation"></use>
+                    </svg>
+                </button>
+            </h6>
+            <div data-collapse="collapse-3" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="font-VazirLight text-colorSecondary *:p-1 *:m-1">  
+                <!-- invitation link -->
+                <p class="tracking-wider">https://hub.archnets.com/register?aff=WCm03wjFCV</p>
+                <!-- number of invitaion -->
+                <p>تعداد نفرات دعوت شده: 0</p>
+                <!-- cost of invitaion -->
+                <p>هزینه ی دریافتی از هر دعوت: 23,000 هزار تومان</p>
+              </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    <!-- Finish Main -->
     
+
+    <script src="../vendor/accordion.js"></script>
 </body>
 </html>

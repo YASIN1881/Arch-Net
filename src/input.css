@@ -40,4 +40,12 @@
     .customizeStyle {
         font-style: normal;
     }
+
+    .submitBtn {
+        @apply bg-violet-800 text-colorSecondary text-lg w-1/2 flex justify-center items-center
+    }
+
+    .inputPass {
+        @apply w-full rounded-md bg-white border-0 my-2  h-7 outline-0
+    }
 }
