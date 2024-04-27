@@ -663,6 +663,10 @@ video {
   bottom: -1px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -675,6 +679,11 @@ video {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mb-0 {
@@ -754,6 +763,14 @@ video {
   height: 100%;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -768,6 +785,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.min-w-24 {
+  min-width: 6rem;
 }
 
 .flex-1 {
@@ -834,6 +859,10 @@ video {
   gap: 1rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -854,6 +883,14 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -864,6 +901,11 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-borderColor {
+  --tw-border-opacity: 1;
+  border-color: rgb(36 42 72 / var(--tw-border-opacity));
 }
 
 .border-slate-100 {
@@ -891,9 +933,19 @@ video {
   background-color: rgb(233 236 239 / var(--tw-bg-opacity));
 }
 
+.bg-backgroundColorItem {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 19 45 / var(--tw-bg-opacity));
+}
+
 .bg-bgWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(14 19 45 / var(--tw-bg-opacity));
+}
+
+.bg-blueColor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 111 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br {
@@ -935,6 +987,21 @@ video {
   padding: 4px;
 }
 
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -963,6 +1030,10 @@ video {
   font-size: 22.4px;
 }
 
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -971,6 +1042,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-black {
@@ -984,6 +1060,11 @@ video {
 .text-colorSecondary {
   --tw-text-opacity: 1;
   color: rgb(203 205 216 / var(--tw-text-opacity));
+}
+
+.text-colorText {
+  --tw-text-opacity: 1;
+  color: rgb(148 152 172 / var(--tw-text-opacity));
 }
 
 .text-transparent {

@@ -14,6 +14,9 @@ module.exports = {
         colorSecondary: "#cbcdd8",
         colorText: "#9498ac",
         backgroundColor: "#e9ecef",
+        backgroundColorItem: "#0e132d",
+        borderColor: "#242a48",
+        blueColor: "#556fff"
       }
     },
   },
