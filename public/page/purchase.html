@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/output.css" />
 </head>
 <body class="bg-bgWhite">
+
     <svg class="hidden">
         <symbol id="switch-account" viewBox="0 0 20 20"><path d="M6.2437,7.1938A1.9443,1.9443,0,1,0,4.2993,5.25,1.9463,1.9463,0,0,0,6.2437,7.1938Zm0-2.8886a.9443.9443,0,1,1-.9444.9443A.9456.9456,0,0,1,6.2437,4.3052Zm.8012,4.6069H5.4424A1.1138,1.1138,0,0,0,4.33,10.0249v1.1372a.5.5,0,0,1-1,0V10.0249A2.1151,2.1151,0,0,1,5.4424,7.9121H7.0449a2.1151,2.1151,0,0,1,2.1128,2.1128v1.1372a.5.5,0,0,1-1,0V10.0249A1.1138,1.1138,0,0,0,7.0449,8.9121Zm4.7671,1.37a1.9444,1.9444,0,1,0,1.9443-1.9443A1.9464,1.9464,0,0,0,11.812,10.2822Zm2.8887,0a.9444.9444,0,1,1-.9444-.9443A.9457.9457,0,0,1,14.7007,10.2822Zm1.97,4.7754v1.1372a.5.5,0,0,1-1,0V15.0576a1.1138,1.1138,0,0,0-1.1128-1.1128H12.9551a1.1138,1.1138,0,0,0-1.1128,1.1128v1.1372a.5.5,0,0,1-1,0V15.0576a2.1151,2.1151,0,0,1,2.1128-2.1128h1.6025A2.1151,2.1151,0,0,1,16.67,15.0576Zm-6.78.3975a.5.5,0,0,1-.5.5h-1.15a2.503,2.503,0,0,1-2.5-2.5v-.29a.5.5,0,0,1,1,0v.29a1.5017,1.5017,0,0,0,1.5,1.5h1.15A.5.5,0,0,1,9.8906,15.4551Zm-.72-10.86a.5.5,0,0,1,.5-.5h2.09a2.5029,2.5029,0,0,1,2.5,2.5v.24a.5.5,0,1,1-1,0v-.24a1.5016,1.5016,0,0,0-1.5-1.5H9.67A.5.5,0,0,1,9.17,4.5947Z"></path></symbol>
 
@@ -18,5 +19,88 @@
 
         <symbol id="profile" version="1.1"><defs id="profile"></defs><g id="profile"><svg viewBox="0 0 20 20"><path fill="#f8fafc" fill-rule="evenodd" d="M334 2011c3.785 0 6.958 2.214 7.784 6h-15.568c.826-3.786 3.999-6 7.784-6m-4-6c0-2.206 1.794-4 4-4s4 1.794 4 4-1.794 4-4 4-4-1.794-4-4m7.758 4.673A5.983 5.983 0 0 0 340 2005a6 6 0 1 0-9.758 4.673c-3.659 1.375-6.242 4.772-6.242 9.327h20c0-4.555-2.583-7.952-6.242-9.327" transform="translate(-324 -1999)" class="color000 svgShape"></path></svg></g></symbol>
     </svg>
+
+    <!-- Start header -->
+    <header class="m-5">
+        <!-- Logo -->
+        <div class="flex justify-center">
+            <a class="flex flex-row-reverse cursor-pointer">
+                <img src="../image/Logo.png" alt="Logo" class="size-7" />
+                <i class="font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-400 ease-linear transition hover:hue-rotate-[20deg] duration-300 customizeStyle">rchNet</i>
+            </a>
+        </div>
+    </header>
+    <!-- Finish header -->
+
+    <!-- Start main -->
+    <main class="m-5">
+        <section>
+            <!-- purchase of buy -->
+            <div class="relative overflow-x-auto shadow-md rounded">
+                <table class="w-full text-sm text-left ltr:text-right text-gray-500 dark:text-gray-400">
+
+                    <thead class="text-base text-center font-VazirBold bg-gray-700 text-colorSecondary">
+                        <tr>
+                            <th scope="col" class="px-5 py-3">
+                                نام اشتراک
+                            </th>
+                            <th scope="col" class="px-5 py-3">
+                                تاریخ ایجاد
+                            </th>
+                            <th scope="col" class="px-5 py-3">
+                                وضعیت
+                            </th>
+                            <th scope="col" class="px-5 py-3">
+                                شماره سفارش
+                            </th>
+                            <th scope="col" class="px-5 py-3">
+                                مبلغ پرداختی
+                            </th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr class="font-VazirMedium text-center text-base odd:bg-gray-900 even:bg-gray-800 border-b dark:border-gray-700">
+                            <th scope="row" class="px-5 py-3 text-gray-900 whitespace-nowrap dark:text-white">
+                                اشتراک ۲۰ گیگ دو کاربره
+                            </th>
+                            <td class="px-6 py-4">
+                                2024-03-16 12:31:30
+                            </td>
+                            <td class="py-4">
+                                <p class="bg-greenBg text-greenText rounded">پرداخت شده</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                V97NATN7PZOLKSL
+                            </td>
+                            <td class="px-6 py-4">
+                                32,000  تومان
+                            </td>
+                        
+                        </tr>
+                        <tr class="font-VazirMedium text-center text-base odd:bg-gray-900 even:bg-gray-800 border-b dark:border-gray-700">
+                            <th scope="row" class="px-5 py-3 text-gray-900 whitespace-nowrap dark:text-white">
+                                اشتراک ۲۰ گیگ دو کاربره
+                            </th>
+                            <td class="px-6 py-4">
+                                2024-03-16 12:31:30
+                            </td>
+                            <td class="py-4">
+                                <p class="bg-greenBg text-greenText rounded">پرداخت شده</p>
+                            </td>
+                            <td class="px-6 py-4">
+                                V97NATN7PZOLKSL
+                            </td>
+                            <td class="px-6 py-4">
+                                32,000  تومان
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+    <!-- Finish main -->
 </body>
 </html>
