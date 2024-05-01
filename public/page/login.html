@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/output.css" />
+</head>
+<body class="bg-bgWhite">
+
+    <svg class="hidden">
+        <symbol id="email" viewBox="0 0 64 64"><path fill="#f8fafc" d="M53.42 53.32H10.58a8.51 8.51 0 0 1-8.5-8.5V19.18a8.51 8.51 0 0 1 8.5-8.5h42.84a8.51 8.51 0 0 1 8.5 8.5v25.64a8.51 8.51 0 0 1-8.5 8.5ZM10.58 13.68a5.5 5.5 0 0 0-5.5 5.5v25.64a5.5 5.5 0 0 0 5.5 5.5h42.84a5.5 5.5 0 0 0 5.5-5.5V19.18a5.5 5.5 0 0 0-5.5-5.5Z" class="color222222 svgShape"></path><path fill="#f8fafc" d="M32 38.08a8.51 8.51 0 0 1-5.13-1.71L3.52 18.71a1.5 1.5 0 1 1 1.81-2.39L28.68 34a5.55 5.55 0 0 0 6.64 0l23.35-17.68a1.5 1.5 0 1 1 1.81 2.39L37.13 36.37A8.51 8.51 0 0 1 32 38.08Z" class="color222222 svgShape"></path><path fill="#f8fafc" d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z" class="color222222 svgShape"></path></symbol>
+
+        <symbol id="password" viewBox="0 0 16 16"><path d="M10,6h-7v-1c0,-1.6543 1.3457,-3 3,-3c1.6543,0 3,1.3457 3,3h2c0,-2.75684 -2.24316,-5 -5,-5c-2.75684,0 -5,2.24316 -5,5v1.27814c-0.59491,0.346863 -1,0.984741 -1,1.72186v6c0,1.10303 0.896973,2 2,2h8c1.10303,0 2,-0.896973 2,-2v-6c0,-1.10303 -0.896973,-2 -2,-2Zm-3,5.61072v1.38928h-2v-1.38928c-0.30481,-0.274536 -0.5,-0.668213 -0.5,-1.11072c0,-0.82843 0.67157,-1.5 1.5,-1.5c0.82843,0 1.5,0.67157 1.5,1.5c0,0.442505 -0.19519,0.836182 -0.5,1.11072Z" transform="translate(2)" fill="#f8fafc" class="color000000 svgShape"></path></symbol>
+    </svg>
+    
+    <!-- Start header -->
+    <header class="m-5">
+        <!-- Logo -->
+        <div class="flex justify-center">
+            <a class="flex flex-row-reverse cursor-pointer">
+                <img src="../image/Logo.png" alt="Logo" class="size-7" />
+                <i class="font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-purple-400 ease-linear transition hover:hue-rotate-[20deg] duration-300 customizeStyle">rchNet</i>
+            </a>
+        </div>
+        <!-- Title -->
+        <h1 class="text-center mt-5 text-xl text-colorSecondary">ورود به حساب کاربری</h1>
+    </header>
+    <!-- Finish header -->
+
+    <!-- Start main -->
+    <main class="m-5">
+        <!-- Form -->
+        <section class="">
+            <form action="" class="h-full flex flex-col justify-between">
+                <!-- Inputs -->
+                <div class="*:mb-[18px]">
+                    <!-- Email -->
+                    <label for="" class="text-colorSecondary">ایمیل</label>
+                    <div class="flex flex-col justify-center h-12 px-3 py-[6px] mt-2 bg-borderColorSecondary rounded-md">
+                        <!-- input and svg -->
+                        <div class="flex items-center gap-3">
+                            <!-- svg -->
+                            <div>
+                                <svg class="size-5">
+                                    <use href="#email"></use>
+                                </svg>
+                            </div>
+                            <!-- input -->
+                            <input type="email" class="outline-0 w-full text-colorSecondary bg-transparent" required placeholder="ایمیل خود را وارد کنید">
+                        </div>
+                    </div>
+                    <!-- Password -->
+                    <label for="" class="text-colorSecondary">پسورد</label>
+                    <div class="flex flex-col justify-center h-12 px-3 py-[6px] mt-2 bg-borderColorSecondary rounded-md">
+                        <!-- input and svg -->
+                        <div class="flex items-center gap-3">
+                            <!-- svg -->
+                            <div>
+                                <svg class="size-5">
+                                    <use href="#password"></use>
+                                </svg>
+                            </div>
+                            <!-- input -->
+                            <input type="password" class="outline-0 w-full text-colorSecondary bg-transparent" required placeholder="رمز عبور خود را وارد کنید">
+                        </div>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="w-full">
+                    <!-- Submin (btn) -->
+                    <button class="w-full h-14 bg-blueColor text-white rounded-md mt-4 flex items-center justify-center">ورود</button>
+                    <!-- Have account -->
+                    <a href="register.html" class="w-full h-14 bg-blueColor text-white rounded-md mt-4 flex items-center justify-center">ساخت اکانت</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Finish main -->
+</body>
+</html>
