@@ -20,7 +20,8 @@ module.exports = {
         greenText: "#00C9A7",
         greenBg: "#00C9A71A",
         redText: "#ED4C78",
-        redBg: "#ED4C781A"
+        redBg: "#ED4C781A",
+        borderColorSecondary: "#0a0f27",
       }
     },
   },
